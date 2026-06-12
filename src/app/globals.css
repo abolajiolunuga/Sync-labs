@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Greed Standard-TRIAL";
+  src: url("/fonts/GreedStandard-TRIAL-Medium.otf") format("opentype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+:root {
+  --font-heading: "Greed Standard-TRIAL", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-black: #000;
+  --color-ink: #121213;
+  --color-panel: #18181a;
+  --color-panel-dark: #0f0f11;
+  --color-line: rgba(255, 255, 255, 0.1);
+  --color-line-dark: #222225;
+  --color-muted: #a8a8b2;
+  --color-muted-light: #6e6e73;
+  --color-soft: rgba(255, 255, 255, 0.7);
+  --color-blue: #2e2ee5;
+  --color-blue-bright: #1e87ff;
+  --page-max: 1200px;
+  --radius-pill: 99px;
+  --radius-md: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(180deg, #2e2ee5 0%, #1e87ff 100%);
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background: linear-gradient(180deg, #2e2ee5 0%, #1e87ff 100%);
+  color: #212127;
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.heading {
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: -0.8px;
+}
+
+.body-copy {
+  font-family: var(--font-body);
+  line-height: 150%;
+  letter-spacing: -0.32px;
+}
+
+.text-12 {
+  font-size: 12px;
+  letter-spacing: -0.24px;
+}
+
+.text-14 {
+  font-size: 14px;
+  letter-spacing: -0.28px;
+}
+
+.text-16 {
+  font-size: 16px;
+  letter-spacing: -0.32px;
+}

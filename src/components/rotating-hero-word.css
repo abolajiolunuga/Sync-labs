@@ -1,0 +1,26 @@
+.rotating-hero-word {
+  position: relative;
+  display: inline-block;
+  width: 7.8em;
+  min-height: 48px;
+  overflow: visible;
+  background: linear-gradient(180deg, #1e87ff 0%, #2e2ee5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.rotating-hero-word-item {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  background: linear-gradient(180deg, #1e87ff 0%, #2e2ee5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  white-space: nowrap;
+  will-change: opacity, transform, filter;
+}

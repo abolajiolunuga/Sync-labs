@@ -1,0 +1,47 @@
+.video-cursor-layer {
+  position: absolute;
+  z-index: 4;
+  inset: 0;
+  border-radius: inherit;
+  cursor: none;
+  overflow: hidden;
+}
+
+.video-cursor-anchor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  will-change: transform, opacity, filter;
+}
+
+.video-cursor-pill {
+  transform: translate(-50%, -50%);
+  transform-origin: center;
+  display: inline-flex;
+  height: 44px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 999px;
+  padding: 4px 12px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.28px;
+  backdrop-filter: blur(20px);
+}
+
+.video-cursor-pill img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 auto;
+}
+
+.video-cursor-pill span {
+  padding: 0 6px;
+  white-space: nowrap;
+}
