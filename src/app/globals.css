@@ -60,7 +60,7 @@ body {
   font-family: var(--font-body);
   font-size: 16px;
   line-height: 150%;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }
 
 button,
@@ -85,7 +85,7 @@ a {
 .body-copy {
   font-family: var(--font-body);
   line-height: 150%;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }
 
 .text-12 {
@@ -95,10 +95,10 @@ a {
 
 .text-14 {
   font-size: 14px;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .text-16 {
   font-size: 16px;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }

@@ -83,7 +83,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }
 
 .button-pair {
@@ -337,7 +337,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }
 
 .scenario-divider {
@@ -413,7 +413,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .feature-card p,
@@ -426,7 +426,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .use-case-section {
@@ -642,7 +642,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .use-case-detail a {
@@ -655,7 +655,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .use-case-detail a img {
@@ -729,7 +729,7 @@
 
 .product-card h3 {
   font-size: 16px;
-  letter-spacing: -0.32px;
+  letter-spacing: 0px;
 }
 
 .closing-section {
@@ -817,7 +817,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .footer-column a {
@@ -827,7 +827,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .footer-lower {
@@ -892,7 +892,7 @@
   font-synthesis-weight: none;
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 .footer-bottom nav {
@@ -903,7 +903,7 @@
 
 .footer-bottom a {
   color: rgba(255, 255, 255, 0.8);
-  letter-spacing: -0.28px;
+  letter-spacing: 0px;
 }
 
 @media (min-width: 721px) and (max-width: 1200px) {
@@ -1033,7 +1033,7 @@
   .scenario-copy p {
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: -0.28px;
+    letter-spacing: 0px;
   }
 
   .scenario-divider {
@@ -1180,15 +1180,15 @@
   .closing-section p {
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: -0.28px;
+    letter-spacing: 0px;
   }
 
   .button-pair .button {
     min-height: 32px;
     padding: 8px 12px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.6;
-    letter-spacing: -0.24px;
+    letter-spacing: 0px;
   }
 
   .hero-stage {
@@ -1337,7 +1337,7 @@
   .scenario-copy p {
     font-size: 14px;
     line-height: 1.5;
-    letter-spacing: -0.28px;
+    letter-spacing: 0px;
   }
 
   .scenario-divider {
@@ -1383,7 +1383,7 @@
 
   .feature-card p {
     font-size: 13px;
-    letter-spacing: -0.26px;
+    letter-spacing: 0px;
   }
 
   .use-case-section {
@@ -1497,7 +1497,7 @@
   .use-case-detail p,
   .use-case-detail a {
     font-size: 14px;
-    letter-spacing: -0.28px;
+    letter-spacing: 0px;
   }
 
   .use-case-mobile-controls {
@@ -1588,7 +1588,7 @@
   .product-card h3,
   .product-card p {
     font-size: 14px;
-    letter-spacing: -0.28px;
+    letter-spacing: 0px;
   }
 
   .closing-section {
