@@ -71,7 +71,7 @@ function MobileUseCaseCard({ direction, index, item }: MobileUseCaseCardProps) {
       <div className="use-case-current-media-mask">
         <div className="use-case-current-media-parallax">
           <div className={`use-case-media use-case-media-${index + 1}`} aria-hidden="true">
-            <img src={item.image} alt="" />
+            <img src={item.image} alt="" loading="lazy" decoding="async" />
           </div>
         </div>
       </div>
@@ -99,7 +99,7 @@ function UseCaseRow({ item, index, isMobileActive, nextItem, rowHeight, shouldRe
       <div className="use-case-current-media-mask">
         <motion.div className="use-case-current-media-parallax" style={{ x: "-50%", y: mediaCounterY }}>
           <div className={`use-case-media use-case-media-${index + 1}`} aria-hidden="true">
-            <img src={item.image} alt="" />
+            <img src={item.image} alt="" loading="lazy" decoding="async" />
           </div>
         </motion.div>
       </div>
@@ -108,7 +108,7 @@ function UseCaseRow({ item, index, isMobileActive, nextItem, rowHeight, shouldRe
         <div className="use-case-media-mask">
           <motion.div className="use-case-media-parallax" style={{ x: "-50%", y: mediaCounterY }}>
             <div className={`use-case-media use-case-media-${index + 2}`} aria-hidden="true">
-              <img src={nextItem.image} alt="" />
+              <img src={nextItem.image} alt="" loading="lazy" decoding="async" />
             </div>
           </motion.div>
         </div>
@@ -172,9 +172,9 @@ export function UseCaseSection({ useCases }: UseCaseSectionProps) {
     >
       <div className="use-case-sticky-stage">
           <div className="use-case-inner">
-          <div className="use-case-base-media" aria-hidden="true">
-            <img src={useCases[0].image} alt="" />
-          </div>
+        <div className="use-case-base-media" aria-hidden="true">
+          <img src={useCases[0].image} alt="" loading="lazy" decoding="async" />
+        </div>
           <motion.div className="use-case-list" style={{ y: trackY }}>
             {useCases.map((item, index) => (
               <UseCaseRow

@@ -64,25 +64,25 @@ const useCases = [
     title: "Entertainment",
     copy: "Dub films, shows, trailers, and creator content with speech that feels closer to the original performance.",
     action: "Dub entertainment",
-    image: "/use-case-entertainment.png",
+    image: "/use-case-entertainment-optimized.jpg",
   },
   {
     title: "Marketing videos",
     copy: "Turn campaign videos, product demos, and ads into localized content for every market.",
     action: "Localize campaigns",
-    image: "/use-case-marketing-videos.png",
+    image: "/use-case-marketing-videos-optimized.jpg",
   },
   {
     title: "Personalized messages",
     copy: "Create personal video messages in different languages while keeping the delivery warm and believable.",
     action: "Create personal videos",
-    image: "/use-case-personalized-messages.png",
+    image: "/use-case-personalized-messages-optimized.jpg",
   },
   {
     title: "E-learning",
     copy: "Translate lessons and training videos while keeping instructors visually connected to the learner.",
     action: "Scale learning content",
-    image: "/use-case-e-learning.png",
+    image: "/use-case-e-learning-optimized.jpg",
   },
 ];
 
@@ -90,22 +90,22 @@ const productCards = [
   {
     title: "Sync-3",
     copy: "Our most advanced lip-sync model, built for complex footage, expressive faces, and production-quality results.",
-    image: "/sync-3.png",
+    image: "/sync-3-optimized.jpg",
   },
   {
     title: "Sync Studio",
     copy: "A visual workspace for uploading videos, testing voices, previewing languages, and exporting final results.",
-    image: "/sync-studio.png",
+    image: "/sync-studio-optimized.jpg",
   },
   {
     title: "Developer API",
     copy: "Automate lip sync and dubbing workflows with APIs and SDKs built for production pipelines.",
-    image: "/developer-api.png",
+    image: "/developer-api-optimized.jpg",
   },
   {
     title: "Creative integrations",
     copy: "Use Sync with tools like Premiere Pro, ComfyUI, and MCP to fit visual dubbing into your existing workflow.",
-    image: "/creative-integrations.png",
+    image: "/creative-integrations-optimized.jpg",
   },
 ];
 
@@ -180,7 +180,7 @@ export default function Home() {
             {productCards.map((card) => (
               <article className="product-card" key={card.title}>
                 <div className="product-media">
-                  <img src={card.image} alt="" />
+                  <img src={card.image} alt="" loading="lazy" decoding="async" />
                 </div>
                 <h3>{card.title}</h3>
                 <p>{card.copy}</p>
