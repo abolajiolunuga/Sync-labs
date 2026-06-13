@@ -669,6 +669,22 @@
   display: none;
 }
 
+.use-case-mobile-image-cache {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.use-case-mobile-image-cache img {
+  display: block;
+  width: 1px;
+  height: 1px;
+  object-fit: cover;
+}
+
 .product-section {
   width: 100%;
   padding: 0 0 120px;

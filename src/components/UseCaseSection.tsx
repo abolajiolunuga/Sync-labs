@@ -3,7 +3,7 @@
 import { AnimatePresence, motion, useScroll, useTransform } from "motion/react";
 import type { MotionValue } from "motion/react";
 import type { CSSProperties } from "react";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const USE_CASE_ROW_HEIGHT = 560;
 const USE_CASE_ROW_START_OFFSET = 760;
@@ -71,7 +71,7 @@ function MobileUseCaseCard({ direction, index, item }: MobileUseCaseCardProps) {
       <div className="use-case-current-media-mask">
         <div className="use-case-current-media-parallax">
           <div className={`use-case-media use-case-media-${index + 1}`} aria-hidden="true">
-            <img src={item.image} alt="" loading="lazy" decoding="async" />
+            <img src={item.image} alt="" loading="eager" decoding="async" />
           </div>
         </div>
       </div>
@@ -150,6 +150,20 @@ export function UseCaseSection({ useCases }: UseCaseSectionProps) {
     [0, trackEndProgress, 1],
     [0, -totalScrollDistance, -totalScrollDistance],
   );
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    useCases.forEach(({ image }) => {
+      const preloadedImage = new window.Image();
+      preloadedImage.decoding = "async";
+      preloadedImage.src = image;
+      preloadedImage.decode?.().catch(() => undefined);
+    });
+  }, [useCases]);
+
   const showPreviousUseCase = () => {
     setMobileDirection(-1);
     setMobileActiveIndex((currentIndex) => (currentIndex - 1 + useCases.length) % useCases.length);
@@ -190,6 +204,11 @@ export function UseCaseSection({ useCases }: UseCaseSectionProps) {
             ))}
           </motion.div>
           <div className="use-case-mobile-panel" aria-live="polite">
+            <div className="use-case-mobile-image-cache" aria-hidden="true">
+              {useCases.map((item) => (
+                <img src={item.image} alt="" loading="eager" decoding="async" key={item.image} />
+              ))}
+            </div>
             <AnimatePresence custom={mobileDirection} initial={false}>
               <MobileUseCaseCard
                 direction={mobileDirection}
